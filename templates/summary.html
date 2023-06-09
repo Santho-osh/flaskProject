@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summary</title>
+</head>
+<body>
+    <h1>Summary</h1>
+    <p>{{ summary }}</p>
+    <audio controls>
+        <source src="{{ url_for('stream_audio', audio_path=audio_path) }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
